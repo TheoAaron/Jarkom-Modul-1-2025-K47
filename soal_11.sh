@@ -6,9 +6,10 @@ apt update && apt install openbsd-inetd telnetd -y
 
 # Masukin konpik
 cat <<EOF > /etc/inetd.conf
-tcp nowait root /usr/sbin/tcpd /usr/sbin/telnetd
-service inetd restart
+telnet tcp nowait root /usr/sbin/tcpd /usr/sbin/telnetd
 EOF
+
+service inetd restart
 
 # Node Eru
 apt update && apt install telnet -y
