@@ -9,7 +9,7 @@ cat <<EOF > /etc/inetd.conf
 telnet tcp nowait root /usr/sbin/tcpd /usr/sbin/telnetd
 EOF
 
-service inetd restart
+service openbsd-inetd restart
 
 # Node Eru
 apt update && apt install telnet -y
