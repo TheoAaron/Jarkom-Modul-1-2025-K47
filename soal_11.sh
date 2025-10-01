@@ -11,5 +11,5 @@ service inetd restart
 EOF
 
 # Node Eru
-apt update && apt install openbsd-inetd telnetd -y
-telnet 10.90.1.2
+apt update && apt install telnet -y
+telnet 10.87.1.2
